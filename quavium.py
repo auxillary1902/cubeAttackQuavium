@@ -65,7 +65,7 @@ class Quavium:
         private_assignment = {}
         for i in range(self.degree):
             public_assignment[self.publicvariables[i]] = 0
-            #private_assignment[self.secretvariables[i]] = self.private_key[i]
+            private_assignment[self.secretvariables[i]] = self.private_key[i]
 
         for as_var in assignment_dict.keys():
 
