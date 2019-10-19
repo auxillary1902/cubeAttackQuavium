@@ -123,8 +123,8 @@ class CubeAttack(object):
         my_flag = True
 
 
-        for assign1 in assign_strings[0:2]:
-            for assign2 in assign_strings[0:2]:
+        for assign1 in assign_strings[0:4]:
+            for assign2 in assign_strings[0:4]:
 
                 #if n_checked >= 0:
                  #  my_flag = False
@@ -237,7 +237,7 @@ class CubeAttack(object):
 
         #self.test_maxterm('v1v2')
         for maxterm in self.possible_maxterms:
-            if self.test_maxterm(maxterm,675):
+            if self.test_maxterm(maxterm,310):
                 valid_maxterms.append(maxterm)
 
         logging.info("VALID MAXTERMS :" + str(valid_maxterms))
