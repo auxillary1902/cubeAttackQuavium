@@ -230,15 +230,16 @@ class CubeAttack(object):
 
         return superpoly
 
-    def execute_offline_attack(self):
+    def execute_offline_attack(self,testing_indexes):
         logging.debug(self.possible_maxterms)
 
         valid_maxterms = []
-
+        print(testing_indexes)
         #self.test_maxterm('v1v2')
-        for maxterm in self.possible_maxterms:
-            if self.test_maxterm(maxterm,310):
-                valid_maxterms.append(maxterm)
+        # for maxterm in self.possible_maxterms:
+        for i in range(len(self.possible_maxterms)):
+            if self.test_maxterm(self.possible_maxterms[i],testing_indexes[i]):
+                valid_maxterms.append(self.possible_maxterms[i])
 
         logging.info("VALID MAXTERMS :" + str(valid_maxterms))
 

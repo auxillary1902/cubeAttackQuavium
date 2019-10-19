@@ -82,9 +82,10 @@ def main():
         #   print(g.test_maxterm(testing_maxterms1[i],675))
         #   print(g.find_superpoly(testing_maxterms1[i]))
         test_maxterm = ["v4v5v7v19v20v37v53v74v78v79","v5v14v19v20v21v27v29v33v42v43","v6v7v17v27v28v48v60v69v74v75"]
+        testing_indexes = [310,310,310]
         g.possible_maxterms = test_maxterm
         print(g.possible_maxterms)
-        sps2 = g.execute_offline_attack()
+        sps2 = g.execute_offline_attack(testing_indexes)
         equations2= g.execute_online_attack(sps2)
         # print(g.test_maxterm("v4v5v7v19v20v37v53v74v78v79", 293))
         # print(g.find_superpoly("v4v5v7v19v20v37v53v74v78v79"))  
