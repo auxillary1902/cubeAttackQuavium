@@ -234,7 +234,7 @@ class CubeAttack(object):
         logging.debug(self.possible_maxterms)
 
         valid_maxterms = []
-        print(testing_indexes)
+        # print(testing_indexes)
         #self.test_maxterm('v1v2')
         # for maxterm in self.possible_maxterms:
         for i in range(len(self.possible_maxterms)):

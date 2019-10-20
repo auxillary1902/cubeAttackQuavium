@@ -54,7 +54,7 @@ def main():
 
     elif args.mode=="quavium":
         g = QuaviumCubeAttack(args.n_rounds)
-        print(g.possible_maxterms)
+        # print(g.possible_maxterms)
         copy_vars1 = g.possible_maxterms[0:3]
         # print(copy_vars1)
         # testing_maxterms1 = []
